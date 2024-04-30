@@ -1,86 +1,30 @@
-html {
-  background-color: aliceblue;
-}
-
-body {
-  margin: 0;
-}
-
-nav {
-  background-color: white;
-}
-
-nav ul {
-  display: flex;
-  justify-content: flex-end;
-}
-
-nav ul li {
-  list-style: none;
-  margin: 20px 12px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #000000;
-  text-transform: uppercase;
-  padding: 6px;
-}
-
-nav ul li a:hover {
-  background-color: aliceblue;
-}
-
-section {
-  margin: 20px;
-}
-
-form {
-  background-color: white;
-}
-
-form input {
-  width: 100%;
-  margin-bottom: 16px;
-}
-
-form input[type="submit"] {
-  margin: 0;
-  background-color: green;
-  color: white;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-/* tambahkan CSS untuk section profile disini */
 #profile {
-  background-color: white;
   padding: 20px;
+  padding-top: 0;
   display: flex;
+  align-items: center;
+  height: 500px;
+  background-color: white;
 }
 
-.profile-photo img {
+#profile .profile-photo {
   width: 200px;
+  height: auto;
   border-radius: 50%;
-  border: solid yellow;
-  margin: 20px;
+  margin-right: 50px;
 }
 
-.profile-text h1 {
-  font-size: 40px;
-}
-
-.profile-text h2 {
-  font-size: 20px;
-  font-weight: lighter;
+.action {
+  justify-content: center;
 }
 
 .action button {
-  background-color: blue;
+  background-color: #333;
   color: white;
-  padding: 10px;
-  border-radius: 10px;
   border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right: 10px;
 }
 
 .action button:hover {
@@ -88,13 +32,3 @@ form input[type="submit"] {
   color: black;
   border: 1px solid;
 }
-
-#detail {
-  background-color: white;
-  padding: 20px;
-}
-
-section.profile {
-  display: flex;
-}
-

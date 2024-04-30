@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar Mundur Maju</title>
+</head>
+<body>
+  <h2>Belajar Mundur Maju</h2>
+
+  <button id="mundur" onclick="hitungMundur()">Mundur</button>
+  <button id="maju" onclick="hitungMaju()">Maju</button>
+  <div id="hasil">0</div>
+
+  <script>
+    let hasilElement = document.getElementById("hasil")
+    let hasil = 0
+
+    function hitungMundur() {
+      hasil--
+      updateHasil()
+    }
+
+    function hitungMaju() {
+      hasil++
+      updateHasil()
+    }
+
+    function updateHasil() {
+      hasilElement.textContent = hasil
+    }
+  </script>
+</body>
+</html>
