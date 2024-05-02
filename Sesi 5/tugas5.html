@@ -17,16 +17,13 @@
 
     <script>
         const dt = document.getElementById("list")
-        dt.innerHTML = ""
 
         function cetak() {
             let pesan = document.getElementById("pesan").value
             let jumlah = document.getElementById("jumlah").value
 
             for (let i = 0; i < jumlah; i++) {
-                let listItem = document.createElement("li")
-                listItem.textContent = pesan
-                dt.append(listItem)
+                dt.innerHTML = dt.innerHTML + `<li>${pesan}</li>`
             }
         }
     </script>
